@@ -2,11 +2,8 @@
 
 def reverse_reverse(word)
   array = []
-
   word.each_char {|a| array << a }
-
   array.reverse!
-
   p array.join
 end
 
