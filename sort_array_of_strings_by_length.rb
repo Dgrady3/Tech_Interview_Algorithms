@@ -8,4 +8,5 @@ def sahort(array)
 end
 
 arr = ["I", "am", "aaaaa", "Red Sox", "fan"]
+
 sahort(arr)
