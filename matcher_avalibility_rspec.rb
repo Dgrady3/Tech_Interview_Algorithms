@@ -80,7 +80,6 @@ end
 # We've done most of the work for you in the check_for_number method.
 # Call it from the matches? method passing the model.
 
-
 module ValidateNumericalityOf
   class Matcher
     def initialize(attribute)
