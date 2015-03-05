@@ -1,5 +1,5 @@
 require 'spec_helper'
 
 describe Class do
-  'pending' #or leave blank
+  'pending' # Or leave blank
 end
