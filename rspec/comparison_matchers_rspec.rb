@@ -18,3 +18,6 @@ describe Tweet do
     tweet.status.length.should be <= 140
   end
 end
+
+### should be is a modifier
+### the <= is a matcher of the modifier
