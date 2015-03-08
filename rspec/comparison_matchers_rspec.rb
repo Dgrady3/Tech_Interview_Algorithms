@@ -21,3 +21,11 @@ end
 
 ### should be is a modifier
 ### the <= is a matcher of the modifier
+
+describe Tweet do
+  it 'truncates the status to 140 characters' do
+    tweet = Tweet.new(status: 'Nom nom nom'* 100, profile_pic: true )
+    tweet.status.length.should be <= 140
+    tweet.profile_pic.should be true
+  end
+end
