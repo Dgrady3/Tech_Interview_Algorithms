@@ -29,3 +29,14 @@ describe Tweet do
     tweet.profile_pic.should be true
   end
 end
+
+### Added another matcher ###
+
+describe Tweet do
+  it 'truncates the status to 140 characters' do
+    tweet = Tweet.new(status: 'Nom nom nom'* 100, profile_pic: true, relationship: false )
+    tweet.status.length.should be <= 140
+    tweet.profile_pic.should be true
+    tweet.relationship.should be_false
+  end
+end
