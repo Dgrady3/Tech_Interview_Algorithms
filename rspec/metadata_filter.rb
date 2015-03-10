@@ -1,5 +1,7 @@
-# Add the focus tag to the 'with a smart zombie' context block.
-# This way we can run $ rspec --tag focus and just run these examples.
+Add the focus tag to the 'with a smart zombie'
+context block. This way we can run $ rspec --tag
+focus and just run these examples.
+
 
 describe Zombie do
   let(:zombie) { Zombie.new }
@@ -16,7 +18,7 @@ describe Zombie do
   end
 end
 
-### refactored below ###
+# added focus: true tag #
 
 describe Zombie do
   let(:zombie) { Zombie.new }
